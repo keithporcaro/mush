@@ -30,10 +30,12 @@ When mush starts up, a second thread starts to interact with the GSM modem. It c
 
 When a new message comes in, Mush checks the /parts folder to see if all the parts for a file are available, and if they are, decodes the file and saves it in /files. If not, it goes back to sleep.
 
+Mush uses Python 2.x. Because of changes in how Python handles a few of the functions that Mush relies on, the code would need to be refactored for Python 3, but there's no reason it wouldn't work.
+
 ##What's next?
 Currently, the script is pretty simple, and mostly a proof that the thing works. It runs in a command line which awaits files, then checks a modem every so often for new messages. 
 
-Using this same model, one could add encryption, improve the compression, and so on. As the options get more numerous, there's room in message 0 to include information about the encoding attributes of this particular dispatch.
+Obviously, one doesn't have to use the script to use Mush. It's just a common pattern of behavior--let's call this way of expressing files Mush Standard 0.1. Using this same model, one could add encryption, improve the compression, and so on. As the options get more numerous, there's room in message 0 to include information about the encoding attributes of this particular dispatch.
 
 In terms of use cases, a modem running Mush could live on a computer that's used to send and receive messages from a virtual number provider connected to a dropbox folder. Or it could power a remote hub, where people in rural areas could plug in flash drives that could be filled with weather reports, news, or other information that is too complex to be communicated over available data channels. 
 
