@@ -1,9 +1,6 @@
 # mush
 A little script to send and receive files over SMS
 
-##What does it do?
-Mush lets a person send and receive files over SMS. 
-
 ##Why?
 Mush is designed for remote environments that need to communicate with a central hub or with each other. In the last year or so talking to people working in far-flung rural contexts, I was struck at the occasional difficulties faced in getting complex, compressible digital files from A to B, and how survey data was often moved via motorcycle courier more than anything else. But, even in many places, there's access to a cell signal, which means there's access to digital information. Mush provides an alternative way to send files--by breaking them up into ASCII-encoded pieces, and transmitting them over SMS. It's designed to live on a GSM USB modem that's plugged into a computer (or anything that can run Python). It's time-consuming, only good for small or compressible files, and not practical if there's any other alternative, but it works. Just like with food, mush isn't good, but it's better than nothing.
 
