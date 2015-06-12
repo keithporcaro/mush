@@ -30,7 +30,7 @@ When mush starts up, a second thread starts to interact with the GSM modem. It c
 
 When a new message comes in, Mush checks the /parts folder to see if all the parts for a file are available, and if they are, decodes the file and saves it in /files. If not, it goes back to sleep.
 
-What's next?
+##What's next?
 Currently, the script is pretty simple, and mostly a proof that the thing works. It runs in a command line which awaits files, then checks a modem every so often for new messages. 
 
 Using this same model, one could add encryption, improve the compression, and so on. As the options get more numerous, there's room in message 0 to include information about the encoding attributes of this particular dispatch.
